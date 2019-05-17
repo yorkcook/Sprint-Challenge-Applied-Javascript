@@ -10,7 +10,7 @@ class TabLink {
    
     this.tabData = this.tabElement.dataset.tab;
     
-    // console.log(this.tabData);
+    console.log(this.tabData);
     
 
    
@@ -30,10 +30,10 @@ class TabLink {
     if(this.tabData === 'all'){
        this.cards = this.tabData;
     } else{
-     this.cards = `${this.tabData}`;
+     this.cards = document.querySelectorAll(`.tabs[data-tab='${this.tabData}']`);
     }
     
-  
+    
 
      // Map over the newly converted NodeList we just created in our if statement above. Convert each this.cards element into a new instance of the TabCard class. Pass in a card object to the TabCard class. 
     // this.cards = Array.from(this.cards).map();
@@ -45,7 +45,7 @@ class TabLink {
     // Add a click event that invokes this.selectTab
     // this.tabElement.addEventListener();
     
-    // this.tabData.addEventListener('click', () => this.selectTab());
+    this.tabElement.addEventListener('click', () => this.selectTab());
   }
 
   selectTab(){
@@ -97,7 +97,7 @@ class TabCard {
     // Update the style of this.cardElement to display = "flex"
     // this.cardElement;
 
-    this.cardElement.style.display = "flex";
+    this.cardElement.style.display("flex");
 
   }
 
