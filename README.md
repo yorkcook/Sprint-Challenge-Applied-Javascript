@@ -32,13 +32,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+<!-- The DOM is the, Application Programming Interface (API), that allows Javascript to add features to a web page without changing the underlying HTML/CSS. -->
+
 2. What is an event?
+
+<!-- Event's are the interactions that a user has with a site. (Ex. clicking the mouse, scrolling, etc)  -->
 
 3. What is an event listener?
 
+<!-- An event listner is waiting for a specific user interaction before firing the code that responds to that specific user action. -->
+
 4. Why would we convert a NodeList into an Array?
 
+<!-- We convert a NodeList into an Array, so that we are able to use the Array methods to manipulate the data to do what we want it to do. -->
+
 5. What is a component?
+
+<!-- A component ties together the HTML, CSS, and JavaScript codes, which allows us to use the DOM to add features. -->
 
 ### Git Set up
 
