@@ -32,11 +32,11 @@ class TabLink {
     if(this.tabData === "all"){
       this.cards = document.querySelectorAll(".card");
     } else{
-      this.cards = document.querySelectorAll(`.tabs[data-tab='${this.tabData}']`);
+      this.cards = document.querySelectorAll(`.card[data-tab='${this.tabData}']`);
     }
     
-    console.log(this.cards)
-    console.log(this.tabData)
+    // console.log(this.cards)
+    // console.log(this.tabData)
 
      // Map over the newly converted NodeList we just created in our if statement above. Convert each this.cards element into a new instance of the TabCard class. Pass in a card object to the TabCard class. 
     // this.cards = Array.from(this.cards).map();
@@ -63,7 +63,7 @@ class TabLink {
     // tabs.forEach(() => )
 
     tabs.forEach((element) =>{
-      element.classList.remove('.active-tab')
+      element.classList.remove('active-tab')
     })
 
     // Select all of the elements with the .card class on them
@@ -82,7 +82,7 @@ class TabLink {
     // Add a class of ".active-tab" to this.tabElement
     // this.tabElement;
 
-    this.tabElement.classList.add(".active-tab")
+    this.tabElement.classList.add("active-tab")
     // console.log(this.tabElement)
   
     // Notice we are looping through the this.cards array and invoking selectCard() from the TabCard class. Just un-comment the code and study what is happening here.
@@ -102,7 +102,7 @@ class TabCard {
     // Update the style of this.cardElement to display = "flex"
     // this.cardElement;
 
-    // this.cardElement.style.display = "flex";
+    this.cardElement.style.display = "flex";
     // document.querySelectorAll('.tab').style.display = "flex";
   }
 
