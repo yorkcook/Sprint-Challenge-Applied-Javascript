@@ -12,7 +12,7 @@ class TabLink {
     
     // console.log(this.tabData);
     
-
+    // this.itemElement = document.querySelector(`.tabs[data-tab='${this.tabData}']`)
    
     
     // We need to find out if a user clicked 'all' cards or a specific category.  Follow the instructions below to accomplish this task:    
@@ -27,12 +27,12 @@ class TabLink {
     //   // this.cards = ;
     // }
 
-    // this.cards = document.querySelector(`.tabs[data-tab='${this.tabData}']`)
+
 
     if(this.tabData === "all"){
-       return this.cards = this.tabElement;
+      this.cards = document.querySelectorAll(".card");
     } else{
-      this.cards = `.tabs[data-tab='${this.tabData}']`;
+      this.cards = document.querySelectorAll(`.tabs[data-tab='${this.tabData}']`);
     }
     
     console.log(this.cards)
