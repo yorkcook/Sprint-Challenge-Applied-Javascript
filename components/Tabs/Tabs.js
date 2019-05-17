@@ -27,10 +27,10 @@ class TabLink {
     //   // this.cards = ;
     // }
 
-    if(this.tabData === 'all'){
-       this.cards = this.tabData;
+    if($(this).tabData === "all"){
+       return $(this).cards = $(this).tabData;
     } else{
-     this.cards = document.querySelectorAll(`.tabs[data-tab='${this.tabData}']`);
+      this.cards = document.querySelectorAll(`.tabs[data-tab='${this.tabData}']`);
     }
     
     
@@ -97,7 +97,7 @@ class TabCard {
     // Update the style of this.cardElement to display = "flex"
     // this.cardElement;
 
-    this.cardElement.style.display("flex");
+    this.cardElement.style.display = "flex";
 
   }
 
