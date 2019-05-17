@@ -27,10 +27,10 @@ class TabLink {
     //   // this.cards = ;
     // }
 
-    if(this.tabData = 'all'){
-      this.cards = this.tabData;
+    if(this.tabData === 'all'){
+       this.cards = this.tabData;
     } else{
-      this.cards = `${this.tabData}`;
+     this.cards = `${this.tabData}`;
     }
     
   
@@ -57,8 +57,11 @@ class TabLink {
     
     // Iterate through the NodeList removing the .active-tab class from each element
     // tabs.forEach()
-
     // tabs.forEach(() => )
+
+    tabs.forEach((element) =>{
+      element.classList.remove('.active-tab')
+    })
 
     // Select all of the elements with the .card class on them
     // const cards = ;
@@ -67,6 +70,10 @@ class TabLink {
 
     // Iterate through the NodeList setting the display style each one to 'none'
     // cards.forEach()
+
+    cards.forEach((squares) => {
+      squares.style.display = "none";
+    });
     
     // Add a class of ".active-tab" to this.tabElement
     // this.tabElement;
